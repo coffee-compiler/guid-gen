@@ -14,7 +14,29 @@ dotnet tool install --global --add-source ./nupkg GuidGenerator
 ### Generate v4 GUIDs
 
 ```powershell
-guidgen 10
+guidgen 3
+
+#30462a77-3c35-4c4a-8a3e-79edf12bb42f
+#955d03cd-6587-4add-ae18-f523042d22bf
+#eedeeaa2-d773-4e88-99d1-d5f371e788d0
+```
+
+### Generate v7 GUIDs
+
+```powershell
+guidgen 5 --v7
+
+#0192d50d-d3b5-72fe-850a-dda67c33d5ec
+#0192d50d-d3b8-73c8-b657-673d4eeb83cf
+#0192d50d-d3b8-7451-9018-d513dfb3d5e5
+#0192d50d-d3b8-7d26-8938-119c37afc1df
+#0192d50d-d3b8-743d-9bf6-f2d640bc46ff
+```
+
+### Render Table
+
+```powershell
+guidgen 10 --table
 
 #  Index │                 GUID
 # ───────┼──────────────────────────────────────
@@ -28,18 +50,4 @@ guidgen 10
 #    7   │ 83735616-af97-4bb9-b471-12f4aa2db579
 #    8   │ 3cb03e74-f380-4637-9a1e-e00d21da328e
 #    9   │ 0d5ad8e6-efd5-4551-90d0-221582e480ee
-```
-
-### Generate v7 GUIDs
-
-```powershell
-guidgen 5 --v7
-
-#  Index │                 GUID
-# ───────┼──────────────────────────────────────
-#    0   │ 0192d4ec-d57e-7106-b9f4-5b64db4fbca0
-#    1   │ 0192d4ec-d57f-7e97-a401-a76bbbea6dee
-#    2   │ 0192d4ec-d57f-74b1-9a7f-1c7dc06ce436
-#    3   │ 0192d4ec-d57f-7840-8f39-38ae17609a20
-#    4   │ 0192d4ec-d57f-707b-8b2b-708f3b2490e2
 ```
